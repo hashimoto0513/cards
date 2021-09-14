@@ -1,0 +1,18 @@
+body {
+    font-size:30px;
+    color:#800080;
+}
+ 
+h1 {
+    font-size:30px;
+    font-style:italic;
+    background:#000000;
+    color:white;
+    padding:10px 10px;
+ 
+ 
+.p {
+    font-size:9px;
+    color:#1f1f1f;
+    text-align:center;
+}
