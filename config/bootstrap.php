@@ -90,9 +90,9 @@ try {
 if (isset($_ENV['CAKE_ENV'])) {
     Configure::load('app_' . $_ENV['CAKE_ENV'], 'default');
 }
-if (file_exists(CONFIG . 'app_local.php')) {
+if (file_exists(CONFIG . 'app_local.php') && env('CAKE_ENV') !== 'heroku') {
     Configure::load('app_local', 'default');
-}
+ }
 
 /*
  * When debug = true the metadata cache should only last
